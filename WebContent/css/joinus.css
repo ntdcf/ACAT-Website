@@ -1,0 +1,40 @@
+html, body, div, a, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: "microsoft yahei";
+    font-weight: normal;
+    font-size: 16px;
+    color: #000;
+}
+h1,h2,form,input,textarea,hr{
+    margin:0;
+    padding:0;
+    color:#717171;
+}
+#Ifo{
+    height: auto;
+    background:  #E3EDF7 ;
+    clear:both;
+}
+form{
+    width:700px;
+    margin: 30px auto;
+    padding: 20px;
+}
+textarea{
+    resize: none;
+}
+h1{clear: both;}
+/*Btn*/
+.Btn{
+    width:120px;
+    height: 45px;
+}
+/*Common.css*/
+.footer{
+    position: fixed;
+    bottom:0;
+}
+.nav-header li {
+    font-size:16px;
+}

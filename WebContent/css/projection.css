@@ -1,0 +1,234 @@
+/* 
+* @Author: anchen
+* @Date:   2015-09-27 23:49:08
+* @Last Modified by:   anchen
+* @Last Modified time: 2015-10-15 19:09:31
+*/
+html,body,div,a,ul,li {
+    margin:0;
+    padding:0;
+    font-family:"microsoft yahei";
+    font-weight: normal;
+    font-size:16px;
+    color:#000;
+}
+html,body {
+    height:100%;
+}
+img{border:0;}
+/*----------------------------------按钮样式------------------*/
+.Btn{
+    height:40px;
+    width:100%;
+    background: #ccc;
+    position:relative;
+}
+.Btn_wrap{
+    width:80%;
+    height:40px;
+    line-height: 40px;
+    margin:0 auto;
+}
+.Btn_wrap button{
+    border-color:#d0d0d0;text-shadow:0 1px rgba(255,255,255,0.8);
+    background:-webkit-gradient(linear,0% 0%,0% 100%,from(#fefefe),to(#e7e7e7));
+    background:-webkit-linear-gradient(#fefefe,#e7e7e7);
+    background:-moz-linear-gradient(#fefefe,#e7e7e7);
+    background:-ms-linear-gradient(#fefefe,#e7e7e7);
+    background:linear-gradient(#fefefe,#e7e7e7);
+    border-top-color:rgba(0,0,0,0.6);
+    float:right;
+    margin-right:10px;
+    margin-top:5px;
+    width:60px;
+}
+.Btn_wrap button:hover{color:#333;}
+.Btn_wrap button:hover,.Btn_wrap button:focus{background:#e7e7e7;}
+/*-------------------------------内容----------------------------*/
+.content{
+    padding:75px 0 70px;
+    zoom:1;
+    z-index: 1;
+}
+.insert{ 
+    width:100%;
+    min-height:700px;
+    height:auto;
+    background:#2F3238;
+}
+.Box{
+    width:80%;
+    margin:0 auto;
+    zoom: 1;
+}
+/*---------------------------------------单个项目------框架----------------------------*/
+.liList{
+    width:100%;
+    min-height: 350px;
+    padding:10px 0 0;
+}
+.liList li{
+   float: left;
+    width: 480px;
+    height: 300px;
+    margin: 0 10px 16px 0;
+    overflow: hidden;
+    background: url(../images/loading.gif) no-repeat center 134px;
+    position: relative;
+    z-index: 2;
+}
+.img{
+    width: 480px;
+    height: 300px;
+    position: absolute;
+    z-index: 1;
+    display: block;
+}
+.introduce{
+    width:544px;
+    height:100%;
+    background: #fff;
+    float:left;
+    padding:0 15px;
+    overflow: hidden;
+}
+/*------------------------------------- 操作型弹出浮层-默认居中--------------------------------- */
+.m-layer{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+    z-index:9999;
+    }
+.m-layer table{
+    table-layout:fixed;
+    width:100%;
+    height:100%;
+}
+.m-layer table tbody td tr{vertical-align:middle;}
+.m-layer .lywrap{
+    position:relative;
+    width:500px;
+    margin:0 auto;
+    border:1px solid rgba(0,0,0,0.3);
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+}
+/*弹框导航*/
+.m-layer .lytt{
+    position:relative;
+    padding:10px;
+    height:35px;
+    margin:0 0 -1px;
+    line-height:35px;
+    border-bottom:1px solid #ddd;
+    border-radius:5px 5px 0 0;
+    background:#fafafa;
+}
+/*标题*/
+.m-layer .lytt h2{
+    float:left;
+    font-size:16px;
+}
+/*点击关闭*/
+.m-layer .lyclose{
+    float:right;
+    font-weight:bold;
+    font-family:arial;
+    font-size:24px;
+    color:#ccc;
+    text-shadow:0 1px #fff;
+    cursor:pointer;
+}
+.m-layer .lyclose:hover{color:#aaa;}
+.m-layer .lyct:last-child,.m-layer .lybt{
+    border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px;
+}
+.m-layer .lyct:first-child{border-top-left-radius:5px;border-top-right-radius:5px;}
+.m-layer .lyct{padding:20px;background:#fff;height:auto;}
+/*弹框尾部*/
+.m-layer .lybt{
+    height:30px;
+    line-height:30px;
+    padding:10px;
+    margin:-1px 0 0;
+    border-top:1px solid #ddd;
+    background:#f7f7f7;
+}
+/*提示信息*/
+.m-layer .lyother{
+    float:left;color:#999;
+}
+/*按钮样式*/
+.m-layer .lybtns{ float:right;}
+.m-layer .lybtns button{
+    float:left;
+    margin-left:10px;
+    width:60px;
+}
+.u-btn{background:#3F89EC;}
+.u-btn:hover{ background-color:#367CDB;}
+.u-btn-c4{
+    background:#ddd;
+    border:1px solid #ccc;
+}
+/* 定制文件上传按钮  */
+.u-upload{
+    display:inline-block;
+    zoom:1;
+    position:relative;
+    overflow:hidden;}
+.u-upload button{
+    /*height:32px;*/
+    padding:0 10px;
+    border:1px solid #ccc;
+    overflow:visible;
+    font-size:14px;
+    color:#666;
+    background:#ddd;
+    margin-left:46px;
+    margin-top:4px;
+    width:80px;
+}
+.u-upload input{
+    position:absolute;
+    top:0;right:-1px;
+    font-size:100px;
+    cursor:pointer;
+    opacity:0;
+    filter:alpha(opacity=0);
+}
+.u-btn-c4:hover,.u-btn-c4:hover,.u-upload:hover button{
+    border-color:#bbb;
+    color:#333;
+    background:#ccc;
+}
+a.u-upload,a.u-upload:hover{text-decoration:none;}
+/*文字信息*/
+.info-text{
+    /*background:red;*/
+    display:inline-block;
+    margin-left:40px;
+    position:relative;
+    /*border-top: 1px solid #ccc;
+    border-bottom:1px solid #ccc;*/
+    padding-bottom:40px;
+}
+.info-text li{
+    height:35px;
+    line-height:35px;
+    margin:5px 15px 0;
+}
+.info-text span{margin-right:12px;color:#ccc;}
+.info-text input,.info-text textarea{
+    width:300px;
+    height:28px;
+    display:inline-block;
+    text-indent: 10px;
+    color:#999;
+}
+.info-text textarea{overflow-y:visible;height:48px;}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.CAL.config.NoticMapper">
+    <select id="findNotice" parameterType="String"
+            resultType="com.CAL.model.NoticeModel">
+        select * from notice order by Time desc
+    </select>
+
+    <insert id="addNewNotice">
+        insert into notice values (#{NoticeTitle},#{content1},#{Time})
+    </insert>
+</mapper>

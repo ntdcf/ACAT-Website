@@ -1,0 +1,136 @@
+.content{
+    background: url(../images/bg-page-login.jpg) no-repeat center fixed;
+    background-size:cover;
+}
+.content {
+    width: 100%;
+    height: 100%;
+    min-height: 1px;
+    background-color: #fff;
+    padding: 50px 0 50px;
+}
+.fl{ float:left;}
+.fr{ float:right;}
+a{color:#999;}
+a:hover{color:#1e82ca;}
+/*-------------------------内容-------------------------------*/
+.main{
+   width:45%;
+    height:auto;
+    margin: 0 auto;
+    border-radius: 6px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
+    border: 1px solid #c9ccd0;
+    background-color: #fafafa;
+    overflow: hidden;
+    zoom: 1;
+    z-index: 3;
+    padding-bottom:20px;
+    top: 10%;
+    position:relative;
+}
+/*---------------------------图标---------------*/
+#logo {
+    display: block;
+    width: 110px;
+    height: 70px;
+    margin: 0 auto;
+    background: url(../images/logo2.png) no-repeat 0 0;
+    overflow: hidden;
+    zoom: 1;
+    margin-top: 40px;
+}
+/*--------------提示----------------*/
+#tips {
+    width: 270px;
+    height: 30px;
+    margin: 0 auto;
+    overflow: hidden;
+    zoom: 1;
+    margin-top: 12px;
+}
+/*-------提示-横线样式-------*/
+.hline {
+    width: 50px;
+    height: 15px;
+    border-bottom: 1px solid #EDEDED;
+    overflow: hidden;
+    zoom: 1;
+}
+/*提示内容*/
+.msg2 {
+    width: 170px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+}
+/*------------------------输入框--------------------------*/
+.inputer{
+    width:50%;
+    height:auto;
+    margin:0 auto;
+}
+/*----------------输入框样式--------------*/
+.inputext{
+    display: block;
+    width: 100%;
+    height: 38px;
+    border: 1px solid #D7D7D7;
+    color: #ccc;
+    font-size: 16px;
+    line-height: 38px;
+    text-indent: 20px;
+    margin:15px 0 0;
+    border-radius:5px;
+    box-shadow: 1px 1px 3px #cccccc;
+    padding-left: 5px;
+    margin-right: 10px;
+}
+/*提交*/
+#submitbtn {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 15px;
+    border-radius: 2px;
+    display: inline-block;
+    -webkit-border-radius: 2px;
+    background-image: -o-linear-gradient(bottom,#1e82ca 0,#5ebce6 100%);
+    background-image: -webkit-linear-gradient(bottom,#1e82ca 0,#5ebce6 100%); 
+    background-image: -webkit-gradient(linear,left bottom,left top,from(#1e82ca),to(#5ebce6));
+    background-image: linear-gradient(bottom,#1e82ca 0,#5ebce6 100%);
+    -webkit-box-shadow: inset 0 1px 0 rgba(176,223,243,.75);
+    box-shadow: inset 0 1px 0 rgba(176,223,243,.75); 
+    cursor: pointer;
+    text-align: center;
+    background-color: #3abae5;
+    word-spacing:15px;
+}
+#submitbtn:hover {
+   background-color:#23b2e2;
+}
+/*返回到首页*/
+.BackIndex{
+    text-align: right;
+    overflow: hidden;
+    zoom: 1;
+    margin-top: 12px;
+    font-size: 14px;
+    color: #666; 
+    padding-right: 15px;
+}
+@media screen and (min-width: 1350px){
+
+}
+@media screen and (max-width: 768px){
+.main{
+    width:80%;
+}
+}

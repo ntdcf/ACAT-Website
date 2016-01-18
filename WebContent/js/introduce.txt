@@ -1,0 +1,51 @@
+    	<div id="con_R">
+        <div id="topDep" class="clear">
+            <h2>CAL发展史</h2>
+            <p class="str"> CAL协会成立于2014年4月</p>
+            <p class="str">协会理念:Nothing is impossible</p>
+            <div class="con_img img_one">
+                <img src="images/dep.png" alt=""/>
+            </div>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;协会自2014年成立至今，包括了11级至14级成员，11级及12级成员<span class="str">均已</span>成功签约各大知名
+                互联网公司。
+            </p>
+            <div class="con_img">
+                <img src="images/about2.png" alt=""/>
+            </div>
+            <p>
+                <span class="bloc">开放自由</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;协会是一个开放自由的地方，在这里，可以跟有共同兴趣的人一起
+                学习，一起交流，每周都会有技术交流会，在这里可以畅所欲言。
+            </p>
+        </div>
+
+        <!--方向-->
+        <a name="Dir"></a>
+        <div id="topDir" >
+            <h2>发展方向</h2>
+            <div class="con_img">
+                <img src="images/index.jpg" alt="" width="95%"/>
+            </div>
+            <p>
+                <span class="bloc">WEB前端</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;利用html/css/javascript等各种文本技术完成客户端产品的开发，
+                致力于通过技术改善用户体验。随着互联网的迅速发展和普及，WEB前端开发工程师这种新型行
+                业和新兴职业正在上升到技术层面。
+            </p>
+            <p>
+                <span class="bloc">JAVA</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;运用Java这种开发语言去完成软件产品的软件程序设计、开发、测试、
+                维护升级等工作。JAVA拥有卓越的通用性、高效性、平台移植性 和安全性等特性，成为全球范
+                围内应用范围最广的开发语言，而且即使历经十余年发展仍然在行业内保持着“常青树”的地位。
+                JAVA工程师的薪水相对较高，通常来说，具有3~5年开发经验的工程师，拥有年薪 10万元是很正常
+                的一个薪酬水平。
+            </p>
+            <p>
+                <span class="bloc">PHP</span>
+                &nbsp;&nbsp;&nbsp;&nbsp;PHP技术，正迎合了目前的互联网的发展趋势。PHP作为非常优秀的、简
+                便的Web开发语言，和Linux，Apache，MySQL紧密结合，形成LAMP的开源黄金组合，不仅降低使用成
+                本，还提升了开发速度，满足最新的互动式网络开发的应用，这使得php软件工程师成为一个发
+                展迅速的职业。
+            </p>
+        </div>
+    </div>

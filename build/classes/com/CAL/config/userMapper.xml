@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.CAL.config.userMapper">
+	<select id="searchStudent" parameterType="String"
+		resultType="com.CAL.model.addDeliverStudent">
+		select * from student where studentid=#{studentid}
+	</select>
+
+	<select id="findStudent" parameterType="String"
+			resultType="com.CAL.model.addDeliverStudent">
+		select * from student
+	</select>
+
+	<insert id="addNewPerson">
+		insert into student values (#{studentid},#{studentname},#{stusex},#{stuclass},#{phonenumber},#{qq},#{email},#{major},#{idea})
+	</insert>
+</mapper> 

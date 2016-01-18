@@ -1,0 +1,485 @@
+/* 
+* @Author: anchen
+* @Date:   2015-09-27 23:46:18
+* @Last Modified by:   anchen
+* @Last Modified time: 2015-11-16 19:00:47
+*/
+/*------------------------------全局样式----------------------------------*/
+html, body, div, a, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: "microsoft yahei";
+    font-weight: normal;
+    font-size:1em;
+    color: #000;
+}
+html,body {
+    height:100%;
+    background-color: #E9EAEC;
+}
+/*-------------------------------内容----------------------------*/
+.section{
+    display:none;
+    position:relative;
+}
+.content{
+    position:relative;
+    zoom:1;
+    z-index: 1;
+    display:block;
+}
+.content .insert{ 
+    width:90%;
+    min-height:700px;
+    height:auto;
+    margin:0 auto;
+    margin-top:-50px;
+    background-color: #fff;
+    border:1px solid #ccc;
+}
+.topTitle{
+    height:auto;
+    width:100%;
+    border-bottom:1px solid #E9EAEC;
+    padding-left:40px;
+}
+.title{
+    color:#333;
+    text-shadow:1px 1px 3px #000;
+}
+.banner .inner {
+    color:rgba(0,0,0,0.7);
+}
+#addMember{
+   left:80%;
+}
+/*-----------------容器-----------------------*/
+.Box{
+    width:100%;
+    padding:30px 40px;
+    min-height:600px;
+    margin:0 auto;
+    overflow: hidden;
+    zoom: 1;
+}
+.box-list{
+    width:auto;
+    margin:0 auto;
+}
+/*-------------------------li的样式--------------------------------------------*/
+.box-list li{
+    width:22%;
+    max-width: 250px;
+    margin:1em;
+    border:1px solid #E9EAEC;
+    height:auto;
+    float:left;
+    background-color: #f3f3f3;
+    -webkit-transition: -webkit-transform 0.6s;
+    -moz-transition:-moz-transform 0.6s;
+    transition: transform 0.6s;
+    -webkit-transition-delay:0.25s;
+    -moz-transition-delay:0.25s;
+}
+.box-list li:hover{
+    -webkit-animation:flip 1s ease both;
+    -moz-animation:flip 1s ease both;
+    animation:flip 1s ease both;
+    border-bottom:1px solid #c9ccd0;
+    box-shadow:0 0 2px rgba(200,200,200,0.75);
+}
+/*照片框*/
+.banner_box{
+    width:140px;
+    height:140px;
+    margin:20px auto;
+    display:block;
+    position:relative;
+    padding:2px;
+    border:1px solid #ddd;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 75px; 
+    opacity: 1;
+    filter:alpha(opacity=100);
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+}
+.banner_box:hover{
+    opacity: 0.8;
+    filter:alpha(opacity=80);
+}
+
+/*文字信息------姓名------班级------就业------*/
+.inner_mesg{
+    width:100%;
+    height:100%;
+    text-align:center;
+    padding:1em 0;
+}
+.inner_name,.inner_class,.inner_position{
+    font-size:14px;
+    color:#717171;
+}
+.inner_name{
+    font-size:19px;
+    color:#26a9e1;
+}
+/*------------------------------------- 操作型弹出浮层-默认居中--------------------------------- */
+.m-layer{
+    display:none;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.7);
+     z-index:9999;
+    }
+.m-layer table{
+    table-layout:fixed;
+    width:100%;
+    height:100%;
+}
+.m-layer table tbody td tr{vertical-align:middle;}
+.m-layer .lywrap{
+    position:relative;
+    width:500px;
+    margin:0 auto;
+    border:1px solid rgba(0,0,0,0.3);
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.2);
+    background:#fff;
+}
+/*弹框导航*/
+.m-layer .lytt{
+    position:relative;
+    width:100%;
+    height:50px;
+    margin:0 0 -1px;
+    line-height:50px;
+    border-bottom:1px solid #ddd;
+    border-radius:5px 5px 0 0;
+    background:#fafafa;
+    box-sizing: content-box;
+
+}
+/*标题*/
+.m-layer .lytt h2{
+    float:left;
+    font-size:1em;
+    padding:0 10px;
+    margin-top:10px;
+    font-weight: 700;
+}
+/*点击关闭*/
+.m-layer .lyclose{
+    float:right;
+    font-weight:700;
+    font-family:arial;
+    font-size:1.5em;
+    color:#ccc;
+    text-shadow:0 1px #fff;
+    cursor:pointer;
+    margin-right:20px;
+}
+.m-layer .lyclose:hover{color:#aaa;}
+.m-layer .lyct:last-child,.m-layer .lybt{
+    border-bottom-right-radius:5px;
+    border-bottom-left-radius:5px;
+}
+.m-layer .lyct:first-child{border-top-left-radius:5px;border-top-right-radius:5px;}
+.m-layer .lyct{
+    background:#fff;
+    height:180px;
+    display:table;
+    margin:15px;
+}
+/*弹框尾部*/
+.m-layer .lybt{
+    height:50px;
+    line-height:30px;
+    margin:-1px 0 0;
+    border-top:1px solid #ddd;
+    background:#f7f7f7;
+}
+/*提示信息*/
+.m-layer .lyother{
+    float:left;
+    color:#999;
+    margin:10px 0 0 10px;
+}
+/*按钮样式*/
+.m-layer .lybtns{ float:right;}
+.m-layer .lybtns button{
+    float:left;
+    margin:10px;
+    width:60px;
+}
+.u-btn{background:#3F89EC;}
+.u-btn:hover{ background-color:#367CDB;}
+.u-btn-c4{
+    background:#ddd;
+    border:1px solid #ccc;
+}
+/*---------头像上传---------*/
+.face-box{
+    width:auto;
+    height:auto;
+    padding:0 10px;
+    display:table-cell;
+}
+.face{
+    width:120px;
+    height:120px;
+    background-color:#333;
+    background: url(../images/logo2.png) center no-repeat;
+   /* background-size: cover;*/
+}
+/* 定制文件上传按钮  */
+.u-upload{
+    display:inline-block;
+    zoom:1;
+    position:relative;
+    overflow:hidden;
+    text-indent: 0px;
+}
+.u-upload button{
+    padding:3px 16px;
+    border:1px solid #ccc;
+    overflow:visible;
+    font-size:1em;
+    color:#666;
+    background:#ddd;
+    margin-top:4px;
+}
+.u-upload input{
+    position:absolute;
+    top:0;right:-1px;
+    font-size:6em;
+    cursor:pointer;
+    opacity:0;
+    filter:alpha(opacity=0);
+}
+.u-btn-c4:hover,.u-btn-c4:hover,.u-upload:hover button{
+    border-color:#bbb;
+    color:#333;
+    background:#ccc;
+}
+a.u-upload,a.u-upload:hover{
+    text-decoration:none;
+    margin-left: 40px;
+}
+/*文字信息*/
+.info-text{
+    width:300px;
+    min-height:155px;
+    height:auto;
+    margin-left:40px;
+    position:relative;
+    border-top: 1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+.info-text li{
+    height:35px;
+    line-height:35px;
+    margin:10px 15px 0;
+}
+.info-text span{margin-right:12px;color:#ccc;}
+.info-text input{
+    width:200px;
+    height:28px;
+    display:inline-block;
+    text-indent: 10px;
+    color:#999;
+}
+/*小于768px时显示*/
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+/*-----------中间样式------------*/
+.section {
+   height:250px;
+   width:100%;
+   padding:2em 0;
+}
+/*--------------------------------标题及公司---上部----------------------*/
+.top .container {
+    height: 100%;
+    display: table;
+}
+/*公司logo容器*/
+.content .container {
+    margin:0 auto;
+    min-width: initial;
+    width: 80%;
+}
+.row{
+    height:100%;
+}
+.top .container .row {
+    display: table-cell;
+    height: 100%;
+}
+.section-title {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    vertical-align: bottom;
+    display: table;
+}
+ .section-title h3 {
+    height: 100%;
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 0;
+    vertical-align: middle;
+    display: table-cell;
+}
+.section-list{
+    margin: 0;
+    height: 65%;
+}
+.section-client .section-list .col {
+    width: 15.5%;
+    -webkit-transition: all 10s easing;
+    transition: all 10s easing;
+}
+.section-list .col {
+    float: left;
+    cursor: pointer;
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+.icon {
+    display: inline-block;
+}
+/*---------------------------个人------------------------------*/
+.section-client .bottom {
+    height: 65%;
+    min-height: 300px;
+}
+.section-client .bottom .row {
+    height: 100%;
+}
+/*箭头样式*/
+.section-client .bottom .row .client-btn {
+    cursor: pointer;
+    position: relative;
+    height: 100%;
+}
+.section-client .bottom .row .client-btn .icon {
+    top: 50%;
+    height: 39px;
+    margin-top: -19.5px;
+    position: absolute;
+    display: none;
+}
+.section-client .bottom .row:hover .client-btn .icon {
+    display: inline-block;
+}
+.icon-left,.icon-right{
+    background-image: url(../images/arrow.png);
+    width: 18px;
+    height: 39px;
+}
+/*左边箭头*/
+.icon-left{
+    background-position: 0 -40px;
+}
+/*--------------中间部分------------*/
+.section-client .bottom .middle {
+    height: 100%;
+    display: table;
+}
+/*ul的样式*/
+.section-client .bottom .middle .client-content {
+    display: table-cell;
+    vertical-align: middle;
+    color: #717171;
+}
+.section-client .bottom li:first-child {
+    display: block;
+}
+.section-client .bottom li {
+    display: none;
+}
+/*头像*/
+.section-client .bottom .client-logo {
+    height:auto;
+    padding-bottom:1em;
+}
+.section-client .bottom .client-logo .icon {
+    margin-top: 2px;
+}
+/*第一个li的头像*/
+.icon-first{
+    width:120px;
+    height:120px;
+    border-radius: 60px;
+    background-size: cover;
+    -webkit-animation:flipInY 1s .2s ease both;
+    -moz-animation:flipInY 1s .2s ease both;
+    animation:flipInY 1s .2s ease both;
+    
+}
+/*文字框架*/
+.section-client .bottom .client-comment {
+    text-align: left;
+    font-size: 16px;
+}
+/*内容样式*/
+.section-client .bottom .client-comment .comment-inner {
+    display: table;
+    height: 88px;
+    margin:0 auto;
+}
+.section-client .bottom .client-comment .comment-inner .comment-inner-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+/*个人介绍*/
+.section-client .bottom .client-cxo {
+    height: 110px;
+    font-size: 22px;
+}
+/*姓名*/
+.section-client .bottom .client-cxo .name {
+    color: #26a9e1;
+}
+/*职位*/
+.section-client .bottom .client-cxo .leader {
+    margin-top: 2%;
+    color: #2c2f35;
+}
+/*-----右箭头--------*/
+.icon-right {
+    background-position: -36px 0;
+}
+@media screen and (max-width: 768px){
+   .insert{
+    display:none;
+   } 
+   .content{
+     background-color: #fff;
+   }
+   .section{
+    display:block;
+   }
+   .content .banner{
+    background-color:pink;
+}
+}
+@media screen and (min-width: 768px){
+  .content .banner{
+    background-color:#E9EAEC;
+    background: url(../images/qq.jpg) top;
+    background-size:cover;
+    display:table;
+    position:static; 
+}
+}

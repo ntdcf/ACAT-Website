@@ -1,0 +1,145 @@
+/* 
+* @Author: anchen
+* @Date:   2015-09-27 23:49:08
+* @Last Modified by:   anchen
+* @Last Modified time: 2015-11-15 22:09:13
+*/
+html,body,div,a,ul,li {
+    margin:0;
+    padding:0;
+    font-family:"microsoft yahei";
+    font-weight: normal;
+    font-size:1em;
+    color:#000;
+    text-decoration:none;
+}
+html,body {
+    height:100%;
+}
+table,tbody,tr,td{
+    height:auto;
+    width:auto;
+    vertical-align:top;
+}
+/*上部图片*/
+.banner{
+    background:url(../images/2.jpeg) center;
+    background-size: cover;
+}
+/*-------------------------------内容----------------------------*/
+.content{
+    padding-bottom:0;
+    min-height:100%;
+    height:auto;
+    background-color: #fff;
+}
+.container{
+    width:90%;
+    height:auto;
+    margin:0 auto;
+    padding-bottom:50px;
+    zoom: 1;
+    position:relative;
+}
+#addMember{
+    position: relative;
+    left: 80%;
+}
+#MsgShow,.Box{
+    width:100%;
+    padding-top:2em;
+    height:auto;
+    position:relative;
+}
+.textform{
+	margin-left:5%;
+}
+/*---------------------------------------单个项目------框架----------------------------*/
+.Box .box-style{
+    width:100%;
+    height:auto;
+    position:relative;
+   }
+/*-------------------------框架-------------------------*/
+.box-style .record{
+    background:#fff;
+    width:100%;
+    height:auto;
+    color:#333;
+    width:100%;
+}
+.record .time{
+    color: #ccc;
+    width:20%;
+    height:auto;
+    text-align:right;
+    padding-right:20px;
+}
+.record .time{
+    font-size:19px;
+}
+
+.record .signal{width:5%;float:left;}
+/*边界圆点*/
+.record .signal .pot{
+    width:8px;
+    height:8px;
+    background:#e6e7ef; 
+    border-radius:8px;
+    margin-top:20px;
+}
+.record-text{
+    height:auto;
+    width:70%;
+    line-height:50px;
+    cursor:pointer;
+    display: inline-block; 
+    word-wrap:break-word; 
+}
+.record-text a,.record-text a:hover{
+    -webkit-transition:1s ease all;
+    -moz-transition:1s ease all;
+}
+.record-text a:hover{
+    color:#428bca;
+    -webkit-transform:translate(12px);
+    -moz-transform:translate(12px);
+    transform:translate(12px);
+}
+.record-text .spanText{
+    color:#999;
+    line-height:25px;
+    font-size: 14px;
+}
+/*--------------------富文本框显示部分----*/
+#Textarea{
+    width:100%;
+    height:auto;
+    display: none;
+    position: relative;
+}
+#btns{
+    width:80%;
+    margin:0 auto;
+}
+@media screen and (max-width: 768px){
+.record .time {
+    text-align:left;
+    width: 90%;
+}
+.record-text{
+    width: 90%;
+}
+}
+@media screen and (min-width: 768px){
+.record .time {
+    text-align:right;
+    float:left;
+}
+.record .signal .pot{
+    float:left;
+}
+.record-text{
+    float:left;
+}
+}

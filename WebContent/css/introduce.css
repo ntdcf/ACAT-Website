@@ -1,0 +1,211 @@
+html, body, div, a, ul, li ,img,h1,h2,p{
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-size: 16px;
+    color: #000;
+    text-decoration:none;
+    list-style: none;
+}
+a:hover{
+    color:#ccc;
+}
+body{
+    position: relative;
+}
+.footer{
+    clear: both;
+}
+.clear{
+    clear: both;
+}
+/*css3*/
+@media (min-width: 1050px){
+    #topDep .str{
+        font-size:23px ;
+    }
+    /*con*/
+    #con{
+        overflow:hidden;
+        width:80%;
+        margin: 50px auto;
+    }
+    /*title*/
+    #con_intro_tit h1{
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 10px;
+        font-size: 30px;
+        color: #666666;
+        margin-top: 20px;
+    }
+    #con_intro_tit h1 span{
+        font-size: 16px;
+        margin-left: 5px;
+        color:#B3B3B4;
+    }
+    /*◊Û±ﬂ*/
+    #con_L{
+        float:left;
+        width:20%;
+    }
+    /*sm_nav*/
+    #sm_nav ul li{
+        background: #4693EC;
+        margin-top: 10px;
+        border-radius:5px ;
+        box-shadow: 2px 3px 4px #89898B;
+        font-size: 20px;
+        text-align: center;
+        width:150px;
+        height:35px;
+        color:#ECECED;
+    }
+    /*”“±ﬂ*/
+    #topDep h2,#topDir h2{
+        font-size: 25px;/*start*/
+        color:#4693EC;
+        margin-bottom: 10px;
+    }
+    #topDep  p,#topDir p{
+        font-size: 18px;
+        color:#666666;
+        line-height: 30px;
+    }
+    #topDep p  span.bloc£¨#topDir p  span.bloc{
+        font-size: 20px;
+        display: block;
+        font-weight: bold;
+    }
+    #con_R{
+        float:left;
+        width:70%;
+        margin-left: 10%;
+    }
+    #topDir{
+        margin: 20px 0;
+    }
+    #topDir p{
+        margin-top: 10px;
+    }
+}
+/*—˘ Ωº”≤ª…œ+1050px÷–Õº∆¨Œ Ã‚*/
+@media (min-width: 768px) and (max-width:1050px) {
+    #topDep .str{
+        font-size:20px ;
+    }
+    /*con*/
+    #con{
+        overflow:hidden;
+        margin-top: 40px;
+        width:90%;
+    }
+    /*title*/
+    #con #con_intro_tit h1{
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 10px;
+        font-size: 25px;
+        color: #666666;
+        margin-top: 20px;
+    }
+    #con_intro_tit h1 span{
+        font-size: 16px;
+        margin-left: 5px;
+        color:#B3B3B4;
+    }
+    /*◊Û±ﬂ*/
+    #con #con_L #sm_nav ul li{
+        width:18%;
+    }
+    /*”“±ﬂ*/
+    #con #con_R{
+        float:left;
+        width:100%;
+    }
+    #topDep h2,#topDir h2{
+        font-size: 25px;
+        color:#4693EC;
+        margin-bottom: 10px;
+    }
+    #topDep  p,#topDir p{
+        font-size: 18px;
+        color:#666666;
+        line-height: 30px;
+    }
+    #topDep p  span.bloc£¨#topDir p  span.bloc{
+        font-size: 20px;
+        display: block;
+        font-weight: bold;
+    }
+    #con_R .img_one{
+        margin-left: 30px;
+        width:100%;
+    }
+    #topDir{
+        margin: 20px 0;
+    }
+    #topDir p{
+        margin-top: 10px;
+    }
+}
+@media (min-width: 250px) and (max-width:767px) {
+    .con_img img{
+        width:90%;
+        height:40%;
+    }
+    #topDep .str{
+        font-size:18px ;
+    }
+    /*con*/
+    #con{
+        overflow:hidden;
+        margin-top: 50px;
+        width:100%;
+    }
+    /*title*/
+    #con_intro_tit h1{
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 10px;
+        font-size: 25px;
+        color: #666666;
+        margin-top: 20px;
+    }
+    #con_intro_tit h1 span{
+        font-size: 13px;
+        margin-left: 5px;
+        color:#B3B3B4;
+    }
+    /*◊Û±ﬂ*/
+    #con #con_L #sm_nav ul li{
+        display:none;
+    }
+    /*”“±ﬂ*/
+    #con #con_R{
+        float:left;
+        width:100%;
+    }
+    #topDep h2,#topDir h2{
+        font-size: 23px;/*start*/
+        color:#4693EC;
+        margin-bottom: 10px;
+    }
+    #topDep  p,#topDir p{
+        font-size: 16px;
+        color:#666666;
+        line-height: 30px;
+    }
+    #topDep p  span.bloc£¨#topDir p  span.bloc{
+        font-size: 18px;
+        display: block;
+        font-weight: bold;
+    }
+    #con_R .img_one{
+        margin-left: 30px;
+        width:100%;
+    }
+    #topDir{
+        margin: 20px 0;
+    }
+    #topDir p{
+        margin-top: 10px;
+    }
+}
